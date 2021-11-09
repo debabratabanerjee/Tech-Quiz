@@ -69,7 +69,7 @@ function percentage(per,num){
   return(per/num)*100;
 }
 
-console.log("Final Score ------->"+score+" \n so gave "+percentage(score,questions.length))+"% correct answer.";
+console.log("Final Score ------->"+score+" \n so gave "+percentage(score,questions.length))+" percent correct answer.";
 
 if(score<2){
   var chance = readline.question('You did not do so well do you want to give another try.\nType "yes" or "no" :',{
@@ -83,4 +83,7 @@ if(score<2){
   play(cQ.question,cQ.options, cQ.answer, cQ.trivia)
 }
   };
+}
+else{
+  console.log("Ok, no worries , Play it another time. See ya!!!")
 }
